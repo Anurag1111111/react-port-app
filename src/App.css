@@ -1,0 +1,19 @@
+.markdown img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.scrollbar::-webkit-scrollbar {
+    display: none;
+} 
+
+.mod{
+    margin-top: 10px;
+    align-items: center;
+}
+.modal-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+  }
