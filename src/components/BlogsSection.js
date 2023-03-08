@@ -8,7 +8,7 @@ function BlogsSection() {
     return (
       <Consumer>
           {(value)=>{
-              const{Blogs}=value;
+              const{blogs}=value;
               return(
                   <div id='call2'>
                   <div className="container py-5" style={{textAlign: "center"}}>
@@ -18,7 +18,7 @@ function BlogsSection() {
                     <div className="lead">About the new concepts.</div>
                         <div className="row my-5 pt-3">
                            {
-                            Blogs.slice(0,3).map((blog) => (
+                            blogs.slice(0,3).map((blog) => (
                                 <div key={blog.id} className="col-12 col-md-4 my-2">
                                     <BlogCard blog={blog}
                                     />

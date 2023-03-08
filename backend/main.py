@@ -100,9 +100,9 @@ def get_blog():
 
         querry = "select id,imageUrl,title,excerpt from blogs where isPublished=True ORDER by lastModified DESC;"
         g.cursor.execute(querry)
-        Blogs = g.cursor.fetchall()
+        blogs = g.cursor.fetchall()
         results = []
-        for blog in Blogs:
+        for blog in blogs:
             object2 = {
                 "id": blog[0],
                 "imageUrl": blog[1],
@@ -137,7 +137,7 @@ def add_blog():
     try:
         blog = request.json
         print(blog)
-        query = "insert into Blogs values(%s,%s,%s,%s,%s,%s,%s);"
+        query = "insert into blogs values(%s,%s,%s,%s,%s,%s,%s);"
         g.cursor.execute(query, [blog['id'], blog['imageUrl'], blog['title'],
                          blog['excerpt'], blog['body'], True, datetime.datetime.now()])
         return {"isSuccessful": True}
@@ -195,7 +195,7 @@ def add_project_by_id():
 
         obj_project = {'imageUrl': project[0],
                        'title': project[1], 'body': project[2]}
-
+        print(project)
         return {'isSuccessful': True, 'result': obj_project}
 
     except Exception as e:

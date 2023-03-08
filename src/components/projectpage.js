@@ -1,44 +1,29 @@
-import React, { Component } from 'react'
-import ReactMarkdown from 'react-markdown'
-import axios from 'axios'
+import React from "react";
+import ReactMarkdown from "react-markdown";
+// import axios from 'axios'
+import { Consumer } from "../context";
 
- class projectpage extends Component {
-  state={
-    imageUrl:"",
-    title:"",
-    body:"",
-  }
-  
-  async componentDidMount(){
-    const response = await axios.get(`http://127.0.0.1:8080/api/project?id=${this.props.match.params.id}`)
-    
-    console.log(response)
-    const isSuccessful = response.data.isSuccessful;
-    
-    if(isSuccessful){
-      this.setState({
-        imageUrl:response.data.result.imageUrl,
-        title:response.data.result.title,
-        body:response.data.result.body
-      });
-    }
-    }
+function projectpage(props) {
+  return (
+    <Consumer>
+      {(value) => {
+        const { Projects } = value;
+        const id = props.match.params.id;
+        const project = Projects.filter((project) => project.id == id)[0];
+        const { imageUrl, title, body } = project;
 
-  render(){
-    // const {Projects}=value;
-    // const id=this.props.match.params.id;
-    // const project=Projects.filter((project)=>project.id==id)[0];
-    const {imageUrl,title,body}=this.state;
-    return(
-        <div className='container py-5 my-5 markdown'>
-          <div className="justify-content-center">
-            <img src={imageUrl} alt={title} className='w-100'/>
-          </div>  
-             <h1 className='font-weight-light text-center my-5'>{title}</h1>
-            <ReactMarkdown children={body}/>
-        </div>
-  )
-  }
-        }
+        return (
+          <div className="container py-5 my-5 markdown">
+            <div className="justify-content-center">
+              <img src={imageUrl} alt={title} className="w-100" />
+            </div>
+            <h1 className="font-weight-light text-center my-5">{title}</h1>
+            <ReactMarkdown children={body} />
+          </div>
+        );
+      }}
+    </Consumer>
+  );
+}
 
 export default projectpage;

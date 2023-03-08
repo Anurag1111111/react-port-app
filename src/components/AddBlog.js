@@ -52,7 +52,7 @@ class AddBlog extends Component {
         
         event.target.reset();
         console.log(newBlog);
-        handler("ADD_PROJECT",newBlog);
+        handler("ADD_BLOG",newBlog);
         console.log(handler);
 
     }

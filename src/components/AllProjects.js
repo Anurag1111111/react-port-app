@@ -8,12 +8,12 @@ function AllProjects() {
         {(value)=>{
         const{Projects}=value;
         return(
-            <div className="container py-5 my-5">
+            <div className="container py-3 mt-5">
                 <div className="py-5">
-                   <h1 className='text-center my-5 font-weight-light'>All My  <span className='text-info'> Projects </span>
+                   <h1 className='text-center my-2 font-weight-light'>All My  <span className='text-info'> Projects </span>
                    </h1>
                 </div>
-                <div className="row my-5 pt-3">
+                <div className="row my-2 pt-1">
                     {
                         Projects.map((project) => (
                             <div key={project.id} className="col-12 col-md-6 my-2">

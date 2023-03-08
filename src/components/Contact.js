@@ -78,7 +78,7 @@ class Contact extends Component {
                                       <input type="email" name='email' className='form-control' onChange={this.onChange}/>
                                   </div>
                                   <div className='py-3'>
-                                      <label htmlFor="email">Tell me about your Project *</label>
+                                      <label htmlFor="description">Tell me about your Project *</label>
                                       <textarea name="description" cols="5" rows="5" className='form-control' onChange={this.onChange}></textarea>
                                   </div>
                                   <button type='submit' className='btn btn-dark float-right my-3' style={{backgroundColor:"black"}}>Lets Talk Business</button>

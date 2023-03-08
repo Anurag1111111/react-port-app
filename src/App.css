@@ -11,9 +11,17 @@
     margin-top: 10px;
     align-items: center;
 }
-.modal-dialog {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+.navbar {
+    z-index: 1;
     
   }
+/* .background{
+    background: radial-gradient(#fff,#c0a0a0);
+    height: 100vh;
+} */
+/* .reco{
+    background: radial-gradient(#fff,#c0a0a0);
+} */
+/* .recoo{
+    background: radial-gradient(#f8f5f5,#d47474);
+} */
