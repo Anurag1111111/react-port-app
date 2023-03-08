@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/react-port-app/static/js/9.a4469791.chunk.js"
   },
   {
-    "revision": "d2a40826e649fe19a802",
+    "revision": "cb3d2c7e20f0e1fa4876",
     "url": "/react-port-app/static/css/main.470bbfa3.chunk.css"
   },
   {
-    "revision": "d2a40826e649fe19a802",
-    "url": "/react-port-app/static/js/main.48b3da34.chunk.js"
+    "revision": "cb3d2c7e20f0e1fa4876",
+    "url": "/react-port-app/static/js/main.c8646cca.chunk.js"
   },
   {
     "revision": "a49e9625a511c27dbaf4",
@@ -452,7 +452,7 @@ self.__precacheManifest = [
     "url": "/react-port-app/static/media/anu.f889425e.jpg"
   },
   {
-    "revision": "a9857ad1e635a8e569ec784e45a4c5e4",
+    "revision": "0cc3d39a515fca2046aecb0da4a5693a",
     "url": "/react-port-app/index.html"
   }
 ];
