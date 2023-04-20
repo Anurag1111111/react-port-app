@@ -20,7 +20,7 @@ export class Provider extends Component {
         break;
       case "ADD_BLOG":
         this.setState({
-          Blogs: [newObject, ...this.state.Blogs],
+          Blogs: [newObject, ...this.state.blogs],
         });
         break;
       case "ADD_RECOMMENDATION":
@@ -50,7 +50,7 @@ export class Provider extends Component {
       {
         id: 2,
         imageUrl:
-          "https://fliphtml5.com/learning-center/wp-content/uploads/2016/07/11.jpg",
+          "https://images.unsplash.com/photo-1615914143778-1a1a6e50c5dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29ya2luZyUyMG9uJTIwbGFwdG9wfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
         title: "Project2",
         excerpt: "This is my project about...",
         body: "body2",
@@ -108,7 +108,7 @@ export class Provider extends Component {
       {
         id: 4,
         imageUrl:
-          "https://fliphtml5.com/learning-center/wp-content/uploads/2016/07/11.jpg",
+          "https://img.business.com/w/700/aHR0cHM6Ly9pbWFnZXMuYnVzaW5lc3NuZXdzZGFpbHkuY29tL2FwcC91cGxvYWRzLzIwMjIvMDQvMDQwNzQ1NTMvMTU1NDI0NDAxMC5qcGVn",
         title: "Blog4",
         excerpt: "This is my Blog about...",
         body: "body4",

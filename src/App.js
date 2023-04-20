@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import ProjectSection from "./components/ProjectSection";
 import Skillstack from "./components/Skillstack";
 import Contact from "./components/Contact";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NotFound from "./components/Not Found";
 import projectpage from "./components/projectpage";
 import Addproject from "./components/Addproject";
@@ -24,7 +24,7 @@ import AddBlog from "./components/AddBlog";
 function App() {
   return (
     <Provider>
-      <HashRouter basename="/react-port-app/" forceRefresh>
+      <BrowserRouter basename="/react-port-app/" forceRefresh>
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -49,7 +49,7 @@ function App() {
           <Route component={NotFound} />
         </Switch>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   );
   // return React.createElement(
