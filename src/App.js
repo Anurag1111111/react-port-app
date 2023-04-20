@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import ProjectSection from "./components/ProjectSection";
 import Skillstack from "./components/Skillstack";
 import Contact from "./components/Contact";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import NotFound from "./components/Not Found";
 import projectpage from "./components/projectpage";
 import Addproject from "./components/Addproject";
@@ -25,7 +25,7 @@ import ScrollTotop from "./components/ScrollTotop";
 function App() {
   return (
     <Provider>
-      <BrowserRouter basename="/react-port-app/" forceRefresh>
+      <HashRouter basename="/react-port-app/" forceRefresh>
         <ScrollTotop />
         <Navbar />
         <Switch>
@@ -51,7 +51,7 @@ function App() {
           <Route component={NotFound} />
         </Switch>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   );
   // return React.createElement(
