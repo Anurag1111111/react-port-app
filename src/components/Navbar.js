@@ -54,6 +54,14 @@ function Navbar() {
                 Blogs
               </Link>
             </div>
+            <div className="navbar-nav">
+              <Link
+                to="/project/add"
+                className="nav-item nav-link text-light font-weight-bold ml-2"
+              >
+                Add Project
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
