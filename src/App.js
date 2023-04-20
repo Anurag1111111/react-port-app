@@ -20,11 +20,13 @@ import BlogsSection from "./components/BlogsSection";
 import AllBlogs from "./components/AllBlogs";
 import blogpage from "./components/blogpage";
 import AddBlog from "./components/AddBlog";
+import ScrollTotop from "./components/ScrollTotop";
 
 function App() {
   return (
     <Provider>
       <BrowserRouter basename="/react-port-app/" forceRefresh>
+        <ScrollTotop />
         <Navbar />
         <Switch>
           <Route exact path="/">
